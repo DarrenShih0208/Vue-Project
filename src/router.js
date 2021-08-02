@@ -14,20 +14,21 @@ Vue.use(VueRouter);
 export default new VueRouter({
     routes: [
       {
-          path: '/',
-          component: App,
-          children: [
-            { path: 'about', component: About},
-            { path: 'booking', component: Booking},
-            { 
-              path: 'courses', 
-              component: Courses,
-              children: [
-                { path: '', component: CourseList},
-                { path: ':id', component: CourseDetail},
-              ],
-            },
-          ],
+        path: '/',
+        component: App,
+        children: [
+          { path: 'about', component: About},
+          { path: 'booking', component: Booking},
+          // { path: 'add', component: add},
+          { 
+            path: 'courses', 
+            component: Courses,
+            children: [
+               { path: '', component: CourseList},
+              { path: ':id', component: CourseDetail},
+            ],
+          },
+        ],
        }, 
     ],
   });

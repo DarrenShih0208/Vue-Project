@@ -30,11 +30,6 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-
-
-
-<!-- 
-    <img class="headpic" src="./imgs/case3.jpg"/> -->
     <router-view/>
     <Footer/>
   </div>

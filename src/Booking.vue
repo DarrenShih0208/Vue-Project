@@ -1,18 +1,6 @@
 <template>
   <div class="bk">
     <h1>Booking</h1>
-    <!-- <br/>
-    <br/>
-    <label>NAME:</label>
-    <input/><br/><br/>
-    <label>TEL:</label>
-    <input/><br/><br/>
-    <label>TIME:</label>
-    <input/><br/><br/>
-    <label>COURSE:</label>
-    <input/><br/><br/>
-    <button type="submit" class="btn btn-success">submit</button>
-    <br/><br/> <br/> -->
     <div class="container ">
       <div>
         <label for="exampleFormControlInput1" class="form-label">User name</label>
