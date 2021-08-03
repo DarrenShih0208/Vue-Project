@@ -6,6 +6,7 @@ import Courses from './Courses.vue';
 import Booking from './Booking.vue';
 import CourseList from './CourseList.vue';
 import CourseDetail from './CourseDetail.vue';
+import add from './add.vue';
 
 
 Vue.use(VueRouter);
@@ -19,7 +20,7 @@ export default new VueRouter({
         children: [
           { path: 'about', component: About},
           { path: 'booking', component: Booking},
-          // { path: 'add', component: add},
+          { path: 'add', component: add},
           { 
             path: 'courses', 
             component: Courses,

@@ -1,7 +1,9 @@
 <template>
   <div>
     <header>Exercises Class</header>
-    <Menu/>
+    <nav>
+      <Menu/>
+    </nav>
     
     <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
@@ -68,5 +70,9 @@ img{
     width: 50%;
     height: 400px;
     margin : auto;
+}
+nav{
+  padding-bottom: 10px;
+  background-color: rgb(54, 179, 218);
 }
 </style>

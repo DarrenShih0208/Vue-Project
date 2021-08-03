@@ -2,7 +2,9 @@
   <div class="topselects">
     <router-link class="selects" to="/about">關於公司</router-link>
     <router-link class="selects" to="/courses">課程介紹</router-link>
-    <router-link class="selects" to="/booking">線上預訂</router-link>
+    <router-link class="selects" to="/add">線上預訂</router-link>
+    <router-link class="selects" to="/booking">意見反饋</router-link>
+    
   </div>
 </template>
 
@@ -20,7 +22,7 @@
 .selects{
   color: rgb(139, 46, 66);
   font-family:unset;
-  padding: 100px;
+  padding-left: 60px;
   text-decoration:none;
 }
 
