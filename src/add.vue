@@ -3,7 +3,7 @@
 
     <div class="container">
 
-
+      <!-- header_item -->
       <div class="item_header">
         <div class="item_detail">商品</div>
         <div class="price">單價</div>
@@ -11,22 +11,22 @@
         <div class="amount">總計</div>
         <div class="operate">操作</div>
       </div>
-
-      <div>
+      <!-- body_item -->
+      <div class="item_container" v-for="(lesson, index) in lessons" :key="index" >
         <div class="item_header item_body">
           <div class="item_detail">
-            <img src="https://images.unsplash.com/photo-1534961880437-ce5ae2033053?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=668&q=80" alt="">
-            <div class="name">優質短袖白T</div>
+            <img :src="lesson.imgUrl" alt="">
+            <div class="name">{{lesson.title}}</div>
           </div>
-          <div class="price"><span>$</span>300</div>
+          <div class="price"><span>$</span>{{lesson.count}}</div>
           <div class="count">
-            <button>-</button>
-            1
-            <button>+</button>
+            <button @click="handleSub(lesson)">-</button>
+            {{lesson.total}}
+            <button @click="handlePlus(lesson)">+</button>
           </div> 
-          <div class="amount">300</div>
+          <div class="amount">{{lesson.count * lesson.total}}</div>
           <div class="operate">
-            <button>刪除</button>
+            <button @click="lesson.total = 0">重選</button>
           </div>
         </div>
 		  </div>	
@@ -48,7 +48,16 @@ export default{
       lessons: [],
     };
   },
-
+  methods:{
+    handlePlus: function(lesson){
+      lesson.total++;
+    },
+    handleSub: function(lesson){
+      if(lesson.total>0){
+        lesson.total--;
+      }
+    },
+  },
   mounted(){
     axios.get('http://localhost:3000/data').then((res) =>{
       console.log(res.data);
@@ -89,8 +98,8 @@ export default{
 		margin-bottom: 30px;  
 }
 .item_detail img{
-    width: 80px;
-    height: 80px;
+    width: 90px;
+    height: 100px;
     border-radius: 3px;
     /* margin-top: 10px; */
     float: left;
