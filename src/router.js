@@ -25,11 +25,11 @@ export default new VueRouter({
             path: 'courses', 
             component: Courses,
             children: [
-               { path: '', component: CourseList},
+              { path: '', component: CourseList},
               { path: ':id', component: CourseDetail},
             ],
           },
         ],
-       }, 
+      }, 
     ],
   });

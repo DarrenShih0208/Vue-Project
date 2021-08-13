@@ -10,7 +10,6 @@
 
 
 <style scoped>
-
 .topselects {
   /* display: inline-block; */
   height: 30px;
@@ -18,7 +17,6 @@
   font-size: 25px;
   text-align: center;
 }
-
 .selects{
   color: rgb(139, 46, 66);
   font-family:unset;

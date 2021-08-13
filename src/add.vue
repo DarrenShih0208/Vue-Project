@@ -1,8 +1,6 @@
 <template>
   <div>
-
     <div class="container">
-
       <!-- header_item -->
       <div class="item_header">
         <div class="item_detail">商品</div>
@@ -31,24 +29,17 @@
         </div>
 		  </div>	
     </div>
-
-
   </div>
 </template>
 
 <script>
-import  axios  from  'axios' 
-import  VueAxios  from  'vue-axios'
-import Vue from 'vue'
-Vue.use( VueAxios ,  axios );
-
+import { mapState , mapActions } from 'vuex';
 export default{
-  data(){
-    return {
-      lessons: [],
-    };
+  computed:{
+    ...mapState(['lessons'])
   },
   methods:{
+    ...mapActions(['axiosLessons']),
     handlePlus: function(lesson){
       lesson.total++;
     },
@@ -59,20 +50,12 @@ export default{
     },
   },
   mounted(){
-    axios.get('http://localhost:3000/data').then((res) =>{
-      console.log(res.data);
-      this.lessons = res.data;
-      console.log("lessons: ", this.lessons);
-    }).catch((err) =>{
-      // Run into big problems when I get an error
-      console.log("Got an error logging in, here's the message: ", err);
-    });
-  }
+    this.axiosLessons();
+  },
 }
 </script>
 
 <style scoped>
-
 .item_header{
     display: flex;
     width: 1000px;
@@ -108,5 +91,4 @@ export default{
     margin-left: 100px;
     margin-top: 20px;
 } 
-
 </style>
