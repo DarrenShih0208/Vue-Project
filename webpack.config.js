@@ -45,6 +45,13 @@ module.exports = {
     },
     extensions: ['*', '.js', '.vue', '.json']
   },
+  // plugins: [
+  //   new webpack.optimize.CommonsChunkPlugin('common.js'),
+  //   new webpack.ProvidePlugin({
+  //     jQuery: "jquery",
+  //     $: "jquery"
+  //   })
+  // ],
   devServer: {
     historyApiFallback: true,
     noInfo: true,

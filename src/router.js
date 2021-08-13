@@ -9,8 +9,8 @@ import CourseDetail from './CourseDetail.vue';
 import add from './add.vue';
 
 
-Vue.use(VueRouter);
 
+Vue.use(VueRouter);
 
 export default new VueRouter({
     routes: [

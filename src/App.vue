@@ -49,14 +49,13 @@ export default{
 }
 </script>
 
-
 <style scoped>
 .headpic{
-    display: block;
-    text-align: center;
-    width: 50%;
-    height: 400px;
-    margin : auto;
+  display: block;
+  text-align: center;
+  width: 50%;
+  height: 400px;
+  margin : auto;
 }
 .Footer{
   height: 70px;
@@ -64,14 +63,15 @@ export default{
   position: absolute;
 }
 img{
-    display: block;
-    text-align: center;
-    width: 50%;
-    height: 400px;
-    margin : auto;
+  display: block;
+  text-align: center;
+  width: 50%;
+  height: 400px;
+  margin : auto;
 }
 nav{
   padding-bottom: 10px;
   background-color: rgb(54, 179, 218);
+  margin-bottom: 30px;
 }
 </style>

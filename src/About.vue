@@ -4,7 +4,7 @@
     <div class="select">
       <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
         Mauris in neque quis sem fringilla accumsan eget sit amet quam.
-         In nec lorem et quam sollicitudin malesuada eget ac turpis. </p>
+        In nec lorem et quam sollicitudin malesuada eget ac turpis. </p>
     </div>
     <div class="select">
       <p>Nam et neque vehicula, ultrices sem ac, ullamcorper dolor. 
@@ -13,13 +13,13 @@
         Nullam euismod rhoncus placerat. Suspendisse in ex neque. Quisque vehicula accumsan fermentum. 
         Suspendisse placerat lorem ac lacus vehicula gravida. Sed sagittis, magna eget tincidunt vehicula, 
         lorem sapien imperdiet lorem, non vulputate nulla risus at quam.</p>
-     </div>
+    </div>
     <div class="select">
       <p>Maecenas dignissim ac dui ac ornare. Cras condimentum imperdiet arcu, in tincidunt lectus convallis vitae.
-         Sed dapibus varius sagittis. Suspendisse mattis eget odio quis eleifend. Suspendisse quis efficitur ant
-         e. Mauris sed interdum lorem, et dictum mauris.que nibh ut ligula lobortis, in lacinia metus elementum. 
+        Sed dapibus varius sagittis. Suspendisse mattis eget odio quis eleifend. Suspendisse quis efficitur ant
+        e. Mauris sed interdum lorem, et dictum mauris.que nibh ut ligula lobortis, in lacinia metus elementum. 
         Nullam euismod rhoncus placerat. Suspendisse in ex neque. Quisque vehicula accumsan fermentum. 
-        Suspendisse placerat lorem ac lacus vehicula gravida. Sed sagittis, magna eget tincidunt vehicula, </p>
+        Suspendisse placerat lorem ac lacus vehicula gravida. Sed sagittis, magna eget tincidunt vehicula</p>
     </div>
   </div>
 </template>

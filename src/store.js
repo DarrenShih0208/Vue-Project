@@ -1,12 +1,10 @@
 import Vue from 'vue'
 import Vuex from 'vuex'
-import  axios  from  'axios' 
-import  VueAxios  from  'vue-axios'
+import axios  from  'axios' 
+import VueAxios  from  'vue-axios'
 
 Vue.use( VueAxios ,  axios );
 Vue.use( Vuex );
-
-const Lesson_URL='http://localhost:3000/data';
 
 const store = new Vuex.Store({
   state:{
@@ -18,18 +16,17 @@ const store = new Vuex.Store({
     },
   },
   actions:{
-	axiosLessons({commit}){
-		axios.get('http://localhost:3000/data')
-			.then((res) =>{
-			console.log(res.data);
-			commit('setLessons', res.data);
-		})
-		.catch((err) =>{
-		// Run into big problems when I get an error
-			console.log("Got an error logging in, here's the message: ", err);
-		})
-	},
-},
+		axiosLessons({commit}){
+			axios.get('http://localhost:3000/data')
+				.then((res) =>{
+				console.log(res.data);
+				commit('setLessons', res.data);
+			})
+			.catch((err) =>{
+				console.log("Got an error logging in, here's the message: ", err);
+			})
+		},
+  },
 });
 
 export default store;
