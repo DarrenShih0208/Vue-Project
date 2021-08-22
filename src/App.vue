@@ -1,5 +1,6 @@
 <template>
-  <div>
+  <div class="appDiv">
+    <router-link to="/benefit" class="backhome">回首頁>></router-link>
     <header>Exercises Class</header>
     <nav>
       <Menu/>
@@ -13,13 +14,13 @@
       </div>
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="./imgs/case3.jpg" class="d-block w-50" >
+          <img src="./imgs/case3.jpg">
         </div>
         <div class="carousel-item">
-          <img src="./imgs/case32.jpg" class="d-block w-50" >
+          <img src="./imgs/case32.jpg">
         </div>
         <div class="carousel-item">
-          <img src="./imgs/case33.jpg" class="d-block w-50" >
+          <img src="./imgs/case33.jpg">
         </div>
       </div>
       <!-- bootstrap button-->
@@ -49,29 +50,31 @@ export default{
 }
 </script>
 
-<style scoped>
-.headpic{
-  display: block;
-  text-align: center;
-  width: 50%;
-  height: 400px;
-  margin : auto;
-}
-.Footer{
-  height: 70px;
-  margin-top: -50px;
-  position: absolute;
-}
-img{
-  display: block;
-  text-align: center;
-  width: 50%;
-  height: 400px;
-  margin : auto;
-}
-nav{
-  padding-bottom: 10px;
-  background-color: rgb(54, 179, 218);
-  margin-bottom: 30px;
+<style scoped lang="scss">
+.appDiv {
+  .backhome {
+    position: absolute;
+    color: blue;
+    font-size: 25px;
+    right: 1%;
+    top: 1%
+  }
+  .footer {
+    position: absolute;
+    height: 70px;
+    margin-top: -50px;
+  }
+  nav {
+    padding-bottom: 10px;
+    background-color: rgb(54, 179, 218);
+    margin-bottom: 30px;
+  }
+  img {
+    display: block;
+    text-align: center;
+    width: 55%;
+    height: 400px;
+    margin : auto;
+  }
 }
 </style>

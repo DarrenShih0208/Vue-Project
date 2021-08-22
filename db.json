@@ -5,7 +5,7 @@
       "title": "舉重訓練",
       "name": "John",
       "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTzgd3FJuIJyE6uCuziHDckIo__cJwFsSm47w&usqp=CAU",
-      "count":24000,
+      "count":2400,
       "total":0
     },
     {
@@ -13,7 +13,7 @@
       "name": "Darren",
       "id": 2,
       "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1DDTspcWh8jsnW06fzUHLH2MuzG4gVw3tLA&usqp=CAU",
-      "count":36000,
+      "count":3600,
       "total":0
     },
     {
@@ -21,7 +21,7 @@
       "name": "Dennis",
       "id": 3,
       "imgUrl":"https://www.sportsplanetmag.com/public/article/atl_m_20190325161835_143.jpg",
-      "count":48000,
+      "count":4800,
       "total":0
     },
     {
@@ -29,7 +29,7 @@
       "name": "Derrick",
       "id": 4,
       "imgUrl":"https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRtRySHcNSJMxQ-l74adkmWPL_omYvA3GyXFg&usqp=CAU",
-      "count":99000,
+      "count":9900,
       "total":0
     }
   ]

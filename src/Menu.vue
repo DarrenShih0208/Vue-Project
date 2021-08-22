@@ -26,18 +26,17 @@ import $ from 'jquery';
   }
 </script>
 
-<style scoped>
+<style scoped lang="scss">
 .topselects {
-  /* display: inline-block; */
   height: 30px;
   font-weight: bold;
   font-size: 25px;
   text-align: center;
-}
-.selects{
-  color: rgb(139, 46, 66);
-  font-family:unset;
-  padding-left: 60px;
-  text-decoration:none;
+  .selects {
+    color: rgb(139, 46, 66);
+    font-family:unset;
+    padding: 2px 60px;
+    text-decoration:none;
+  }
 }
 </style>

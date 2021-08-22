@@ -7,22 +7,21 @@ Vue.use( VueAxios ,  axios );
 Vue.use( Vuex );
 
 const store = new Vuex.Store({
-  state:{
+  state: {
     lessons:[],
   },
-  mutations:{
+  mutations: {
     setLessons(state, lessons){
       state.lessons = lessons;
     },
   },
-  actions:{
+  actions: {
 		axiosLessons({commit}){
 			axios.get('http://localhost:3000/data')
-				.then((res) =>{
-				console.log(res.data);
+				.then((res) => {
 				commit('setLessons', res.data);
 			})
-			.catch((err) =>{
+			.catch((err) => {
 				console.log("Got an error logging in, here's the message: ", err);
 			})
 		},
