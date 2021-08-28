@@ -63,7 +63,6 @@ export default{
   methods:{
     ...mapActions(['axiosLessons']),
     handlePlus: function(lesson){
-      console.log(lesson)
       lesson.total++;
     },
     handleSub: function(lesson){
@@ -87,17 +86,21 @@ export default{
 </script>
 
 <style scoped lang="scss">
+@mixin item-header-type($header-width,$header-height){
+  display: flex;
+  width: $header-width;
+  margin: 0 auto;
+  height: $header-height;
+  background-color: rgba(62, 194, 176, 0.747);
+  border-radius: 3px;
+  padding-left: 10px;
+  margin-top: 20px;
+}
+
 .addContainer {
   .container {
     .item_header {
-      display: flex;
-      width: 1000px;
-      margin: 0 auto;
-      height: 30px;
-      background-color: rgba(62, 194, 176, 0.747);
-      border-radius: 3px;
-      padding-left: 10px;
-      margin-top: 20px;
+      @include item-header-type(1000px,30px);
       div {
         width: 200px;
         color: rgb(17, 61, 143);

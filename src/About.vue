@@ -28,16 +28,13 @@
 #abouttext {
   margin:0 auto;
   width: 600px;
-
   h1 {
     text-align: center;
   }
-
   p {
     font-size: 20px;
     width: 600px;
     Font-family: Arial Narrow;
   }
-
 } 
 </style>

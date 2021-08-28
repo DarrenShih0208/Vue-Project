@@ -16,7 +16,6 @@
       </ul>
     </div> 
   </div>
- 
 </template>
 
 <style scoped>

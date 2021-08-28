@@ -51,10 +51,13 @@ export default{
 </script>
 
 <style scoped lang="scss">
+$back-color: blue;
+$contents-color:rgb(54, 179, 218);
+
 .appDiv {
   .backhome {
     position: absolute;
-    color: blue;
+    color: $back-color;
     font-size: 25px;
     right: 1%;
     top: 1%
@@ -66,7 +69,7 @@ export default{
   }
   nav {
     padding-bottom: 10px;
-    background-color: rgb(54, 179, 218);
+    background-color: $contents-color;
     margin-bottom: 30px;
   }
   img {
